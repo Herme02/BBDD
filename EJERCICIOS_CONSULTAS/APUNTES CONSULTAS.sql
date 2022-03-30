@@ -1,0 +1,24 @@
+--APUNTES CONSULTAS--
+
+SELECT DISTINCT... 
+--Para que no salgan 2 valores iguales
+
+SELECT * FROM ALUMNO WHERE DNI LIKE '6%' ORDER BY DNI ASC;
+--Nos ordena los valores de forma ascendente
+
+SELECT * FROM USUARIO.EMP
+--Se usa cuando no es propietario de las tablas
+
+SELECT * FROM ASIGNATURA A, ALUMNO AL
+WHERE A.NOMBRE /*O ASIGNATURA.NOMBRE */LIKE 'L%';
+
+SELECT ENAME, JOB, SAL * 12
+FROM EMPLEADO
+ORDER BY JOB ASC, SAL * 12 DESC;
+
+SELECT ENAME, JOB
+FROM EMPLEADO
+WHERE DEPTNO = 10
+ORDER BY JOB, ENAME
+--Ordena las columnas
+
